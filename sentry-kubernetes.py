@@ -16,7 +16,7 @@ SDK_VALUE = {"name": "sentry-kubernetes", "version": "1.0.0"}
 # mapping from k8s event types to event levels
 LEVEL_MAPPING = {"normal": "info"}
 
-LOG_LEVEL = os.environ.get("LOG_LEVEL", "error")
+LOG_LEVEL = os.environ.get("LOG_LEVEL", "info")
 DSN = os.environ.get("DSN")
 ENV = os.environ.get("ENVIRONMENT")
 RELEASE = os.environ.get("RELEASE")
